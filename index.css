@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: palevioletred;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+  }
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+}
+#nav-bar a :hover{
+    text-decoration: underline;
+}
+
+#obrazek{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-img{
+
+    height: 150px;
+    width: auto;
+}
+
+#nadpis{
+    font-size: 1.5rem;
+    color: palevioletred;  
+    padding-top: 3.5rem;
+    padding-left: 1.2rem;
+}
+
+#pozadi{
+    background-color: pink;
+}
+
+#reklama{ 
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+#obrazky{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+}
+#produkt{
+    background-color: pink;
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+#kontakt{
+    padding: 2rem;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: pink;
+}
+
+  @media (max-width: 760px){
+    #nav-bar{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #obrazky{
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+        width: 25%;
+    }
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+  }
