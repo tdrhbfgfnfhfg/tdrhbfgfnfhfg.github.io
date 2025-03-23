@@ -3,94 +3,51 @@
     padding: 0;
 }
 
-#header{
-    background-color: palevioletred;
+:root{
+    --primary-color: #021024;
+    --secondary-color: #5483b3;
+    --text-color: #c1ebff;
 }
 
-#nav-bar {
-    position: fixed;
-    top: 0px;
-  }
-#nav-bar a{
-    text-decoration: none;
-    color: black;
-    padding: 1.5rem;
+.odkazy{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    padding: 1.2rem;
+    font-size: 1.2rem;
 }
-#nav-bar a :hover{
+.odkazy a{
+    padding-right: 25px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.odkazy :hover{
     text-decoration: underline;
 }
 
-#obrazek{
-    display: flex;
-    justify-content: space-between;
-}
-
-#header-img{
-
-    height: 150px;
-    width: auto;
+body{
+    background-image: url(bota.png);
+    background-size: cover;
 }
 
 #nadpis{
-    font-size: 1.5rem;
-    color: palevioletred;  
-    padding-top: 3.5rem;
-    padding-left: 1.2rem;
-}
-
-#pozadi{
-    background-color: pink;
-}
-
-#reklama{ 
     display: flex;
     justify-content: center;
-    padding: 1.2rem;
+    padding: 1,5rem;
+    font-size: 3rem;
+    color: var(--text-color);
 }
-
-#obrazky{
-    display: flex;
-    justify-content: space-around;
-    padding: 1.2rem;
-}
-#produkt{
-    background-color: pink;
-    border-radius: 50%;
-    padding: 1.2rem;
-}
-
-#form{
+#uvod{
     display: flex;
     justify-content: center;
-    padding: 1.2rem;
+    padding: 2,5rem;
+    font-size: 1,5rem;
+    color: var(--text-color);
 }
 
-#kontakt{
-    padding: 2rem;
-}
-
-#footer{
+.videa{
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    background-color: pink;
+    padding-top: 20rem;
 }
-
-  @media (max-width: 760px){
-    #nav-bar{
-      display: flex;
-      flex-direction: column;
-    }
-
-    #obrazky{
-        display: flex;
-        flex-direction: column;
-        height: 25%;
-        width: 25%;
-    }
-
-    #footer{
-        display: flex;
-        flex-direction: column;
-    }
-  }
