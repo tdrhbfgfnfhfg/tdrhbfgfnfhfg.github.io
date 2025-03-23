@@ -1,1 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+:root{
+    --primary-color: #163563;
+    --secondary-color: #5483b3;
+    --text-color: #c1ebff;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.odkazy{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.odkazy a{
+    padding-right: 25px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.odkazy :hover{
+    text-decoration: underline;
+}
+
+#nadpis{
+    display: flex;
+    justify-content: center;
+    padding: 1,5rem;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+
+.memes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: center;
+    padding: 25px;
+}
+#meme{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
