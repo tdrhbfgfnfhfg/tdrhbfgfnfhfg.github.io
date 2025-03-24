@@ -7,6 +7,9 @@
     --primary-color: #021024;
     --secondary-color: #5483b3;
     --text-color: #c1ebff;
+    --dalsi-color: #4b1c71;
+    --dale-color: #7f4ca5;
+    --dalsitext-color: #fff0ff;
 }
 
 .odkazy{
@@ -31,17 +34,46 @@ body{
     background-size: cover;
 }
 
+.zobrazeni{
+    background: rgba(2, 16, 36, 0.7)
+}
 #nadpis{
     display: flex;
     justify-content: center;
-    padding: 1,5rem;
+
     font-size: 3rem;
     color: var(--text-color);
 }
 #uvod{
     display: flex;
     justify-content: center;
-    padding: 2,5rem;
-    font-size: 1,5rem;
+    padding: 1.05rem;
+    font-size: 1.15rem;
     color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    .odkazy{
+        background-color: var(--dale-color);
+        align-items: center;
+        flex-direction: column;
+    }
+    .odkazy a{
+        color: var(--dalsitext-color);
+        padding-top: 15px;
+    }
+    .zobrazeni{
+        background: rgba(0, 0, 0, 0.7);
+    }
+    #nadpis{
+        color: var(--dalsitext-color);
+        font-size: 1.7rem;
+    }
+    #uvod{
+        color: var(--dalsitext-color);
+        font-size: 0.8rem;
+    }
+    body{
+        background-size: cover;
+    }
 }
