@@ -79,6 +79,7 @@ body{
         font-size: 0.8rem;
     }
     body{
+        background-size: cover;
         background-image: url(cDHU28ds7cCvKAnVQo719gs01.png);
     }
 }
