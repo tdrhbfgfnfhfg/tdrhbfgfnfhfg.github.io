@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #133f4a;
+    --secondary-color: #06151E;
+    --text-color: #22797a;
+    --dalsi-color: #1a0129;
+    --dale-color: #220135;
+    --dalsitext-color: #b3a3ba;
+}
+
+.odkazy{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.odkazy a{
+    padding-right: 25px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+}
+.odkazy :hover{
+    text-decoration: underline;
+}
+
+body{
+    background-image: url(233862-blue-outer-space-planets-space.png);
+    background-size: cover;
+}
+
+.zobrazeni{
+    background: rgba(2, 16, 36, 0.7)
+}
+#nadpis{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+}
+#uvod{
+    display: flex;
+    justify-content: center;
+    padding: 1.05rem;
+    font-size: 1.15rem;
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 800px) {
+    .odkazy{
+        background-color: var(--dalsi-color);
+        align-items: center;
+        flex-direction: column;
+    }
+    .odkazy a{
+        color: var(--dalsitext-color);
+        margin: 5px;
+        background-color: var(--dale-color);
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+    .zobrazeni{
+        background: rgba(34, 1, 53, 0.7);
+    }
+    #nadpis{
+        color: var(--dalsitext-color);
+        font-size: 1.7rem;
+    }
+    #uvod{
+        color: var(--dalsitext-color);
+        font-size: 0.8rem;
+    }
+    body{
+        background-image: url(cDHU28ds7cCvKAnVQo719gs01.png);
+    }
+}
