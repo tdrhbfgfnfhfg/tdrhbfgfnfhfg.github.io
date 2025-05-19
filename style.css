@@ -33,6 +33,7 @@
 body{
     background-image: url(233862-blue-outer-space-planets-space.png);
     background-size: cover;
+    background-repeat: none;
 }
 
 .zobrazeni{
